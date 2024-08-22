@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom';// eslint-disable-next-line
 import { useGetCryptosQuery } from '../Services/cryptoAPI';// eslint-disable-next-line
 import {Cryptocurrencies, News} from '../component';
 
-
+import Loader from './Loader';
 const {Title} = Typography;
 
 const HomePage = () => { // eslint-disable-next-line
   const {data, isFetching} = useGetCryptosQuery();
   const globalStats = data?.data?.stats;
 
-  if(isFetching) return 'Loding...'
+  if(isFetching) return <Loader></Loader>;
   //console.log(data);
 
 
