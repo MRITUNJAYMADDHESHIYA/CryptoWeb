@@ -3,10 +3,10 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';  // esli
 const cryptoNewsHeader = {
     'x-bingapis-sdk': 'true',
     'X-RapidAPI-Key': 'f814835f37msh5a76e1173fa045ap11458bjsn20eb0b565cf6',
-    'X-RapidAPI-Host': 'cryptocurrency-news2.p.rapidapi.com'
+    'X-RapidAPI-Host': 'crypto-market-prices.p.rapidapi.com'
 };
 
-const baseUrl = 'https://cryptocurrency-news2.p.rapidapi.com/v1/coindesk';
+const baseUrl = 'https://crypto-market-prices.p.rapidapi.com/currencies';
 
 const createRequest = (url) =>({url, headers: cryptoNewsHeader});
 
