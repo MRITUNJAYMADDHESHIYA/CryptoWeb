@@ -1,0 +1,54 @@
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+/* Styling for the main span text */
+.beautiful-sentence {
+font-size: 1.5rem;
+color: #333;
+text-align: center;
+margin: 20px 0;
+line-height: 1.8;
+}
+
+/* Button styling */
+button {
+background-color: #4CAF50; /* Green background */
+color: white; /* White text */
+padding: 12px 24px; /* Padding */
+border: none; /* No border */
+border-radius: 5px; /* Rounded corners */
+font-size: 1rem; /* Font size */
+cursor: pointer; /* Pointer cursor on hover */
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+background-color: #45a049; /* Darker green */
+transform: scale(1.05); /* Slightly increase size */
+}
+
+button:active {
+background-color: #3e8e41;
+}
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+.beautiful-sentence {
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+}
